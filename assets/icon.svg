@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Mouse Aventura">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd6ff"/>
+      <stop offset="1" stop-color="#1b7fd4"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef4ff"/>
+      <stop offset="1" stop-color="#b8c3d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="150" cy="152" r="72" fill="#b8c3d8" stroke="#6d7c99" stroke-width="8"/>
+  <circle cx="362" cy="152" r="72" fill="#b8c3d8" stroke="#6d7c99" stroke-width="8"/>
+  <circle cx="150" cy="158" r="42" fill="#ffc3d1"/>
+  <circle cx="362" cy="158" r="42" fill="#ffc3d1"/>
+  <circle cx="256" cy="286" r="144" fill="url(#fur)" stroke="#6d7c99" stroke-width="10"/>
+  <ellipse cx="256" cy="338" rx="86" ry="66" fill="#f2f6ff"/>
+  <ellipse cx="204" cy="266" rx="36" ry="42" fill="#ffffff"/>
+  <ellipse cx="308" cy="266" rx="36" ry="42" fill="#ffffff"/>
+  <circle cx="208" cy="272" r="19" fill="#26313f"/>
+  <circle cx="312" cy="272" r="19" fill="#26313f"/>
+  <circle cx="200" cy="262" r="7" fill="#ffffff"/>
+  <circle cx="304" cy="262" r="7" fill="#ffffff"/>
+  <ellipse cx="256" cy="336" rx="17" ry="13" fill="#f2789c"/>
+  <path d="M222 366 Q256 398 290 366" fill="none" stroke="#7a3b52" stroke-width="11" stroke-linecap="round"/>
+  <ellipse cx="162" cy="336" rx="26" ry="17" fill="#ff9db4" opacity=".5"/>
+  <ellipse cx="350" cy="336" rx="26" ry="17" fill="#ff9db4" opacity=".5"/>
+  <path d="M60 150 L44 176 M60 190 L40 196 M452 150 L468 176 M452 190 L472 196" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "name": "mouse-aventura",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Videojuego educativo para aprender a usar el mouse (100 niveles, 10 mundos).",
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "test": "node --test tests/levels.test.cjs tests/progress.test.cjs tests/scoring.test.cjs tests/paths.test.cjs",
+    "smoke": "node tests/smoke.cjs",
+    "flows": "node tests/flows.cjs",
+    "drag": "node tests/drag.cjs",
+    "pwa": "node tests/pwa.cjs",
+    "a11y": "node tests/a11y.cjs",
+    "screens": "node tests/screens.cjs",
+    "small": "node tests/small-screens.cjs",
+    "check": "node tools/check-files.cjs",
+    "serve": "node tools/serve.cjs"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mouse Aventura: Pequeños Exploradores</title>
+  <meta name="description" content="Juego educativo para aprender a usar el mouse. Primer grado de primaria. 100 niveles, 10 mundos y diploma final.">
+  <meta name="theme-color" content="#176fb8">
+  <meta name="color-scheme" content="light">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script>
+    /* En file:// el navegador bloquea el manifiesto por CORS. Se retira para
+       mantener la consola limpia; la PWA solo aplica cuando hay servidor. */
+    if (location.protocol === 'file:') {
+      var mf = document.querySelector('link[rel="manifest"]');
+      if (mf) mf.parentNode.removeChild(mf);
+    }
+  </script>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/game.css">
+  <link rel="stylesheet" href="styles/play.css">
+  <link rel="stylesheet" href="styles/print.css" media="print">
+</head>
+<body>
+  <a class="skip-link" href="#app">Saltar al contenido</a>
+  <div id="app" class="app" role="application" aria-label="Mouse Aventura: Pequeños Exploradores">
+    <div class="boot">
+      <div class="boot__logo" aria-hidden="true">🐭</div>
+      <p class="boot__text">Cargando la aventura…</p>
+    </div>
+  </div>
+  <div id="modal-root" class="modal-root" hidden></div>
+  <div id="toast-root" class="toast-root" aria-hidden="true"></div>
+  <div id="sr-live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <noscript>
+    <div class="noscript">
+      <h1>Mouse Aventura necesita JavaScript</h1>
+      <p>Activa JavaScript en tu navegador para poder jugar.</p>
+    </div>
+  </noscript>
+
+  <!-- Núcleo -->
+  <script src="src/core/utils.js"></script>
+  <script src="src/core/storage.js"></script>
+  <script src="src/core/audio.js"></script>
+
+  <!-- Datos -->
+  <script src="src/data/worlds.js"></script>
+  <script src="src/data/skills.js"></script>
+  <script src="src/data/avatars.js"></script>
+  <script src="src/data/levels/shared.js"></script>
+  <script src="src/data/levels/w1.js"></script>
+  <script src="src/data/levels/w2.js"></script>
+  <script src="src/data/levels/w3.js"></script>
+  <script src="src/data/levels/w4.js"></script>
+  <script src="src/data/levels/w5.js"></script>
+  <script src="src/data/levels/w6.js"></script>
+  <script src="src/data/levels/w7.js"></script>
+  <script src="src/data/levels/w8.js"></script>
+  <script src="src/data/levels/w9.js"></script>
+  <script src="src/data/levels/w10.js"></script>
+
+  <!-- Lógica de progreso (también se prueba en Node) -->
+  <script src="src/core/scoring.js"></script>
+  <script src="src/core/progress.js"></script>
+  <script src="src/core/store.js"></script>
+
+  <!-- Motor y plantillas -->
+  <script src="src/engine/paths.js"></script>
+  <script src="src/engine/engine.js"></script>
+  <script src="src/engine/templates/move.js"></script>
+  <script src="src/engine/templates/click.js"></script>
+  <script src="src/engine/templates/sequence.js"></script>
+  <script src="src/engine/templates/drag.js"></script>
+  <script src="src/engine/templates/path.js"></script>
+  <script src="src/engine/templates/wheel.js"></script>
+  <script src="src/engine/templates/mission.js"></script>
+
+  <!-- Interfaz -->
+  <script src="src/ui/components.js"></script>
+  <script src="src/ui/tutorial.js"></script>
+  <script src="src/ui/screens/home.js"></script>
+  <script src="src/ui/screens/onboarding.js"></script>
+  <script src="src/ui/screens/worldmap.js"></script>
+  <script src="src/ui/screens/play.js"></script>
+  <script src="src/ui/screens/progress.js"></script>
+  <script src="src/ui/screens/wardrobe.js"></script>
+  <script src="src/ui/screens/settings.js"></script>
+  <script src="src/ui/screens/help.js"></script>
+  <script src="src/ui/screens/teacher.js"></script>
+  <script src="src/ui/screens/diploma.js"></script>
+  <script src="src/ui/app.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>

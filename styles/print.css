@@ -1,0 +1,49 @@
+/* =========================================================================
+   Mouse Aventura — estilos de impresión (resúmenes y diploma)
+   ========================================================================= */
+@media print {
+  @page { size: A4 landscape; margin: 10mm; }
+
+  html, body { background: #fff !important; height: auto; }
+  #app, #modal-root, #toast-root, .skip-link, .toast-root { display: none !important; }
+
+  .print-area { display: block !important; }
+
+  .print-page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #111;
+    font-size: 11pt;
+  }
+  .print-page h1 { font-size: 18pt; margin: 0 0 6pt; }
+  .print-page h2 { font-size: 12.5pt; margin: 12pt 0 4pt; border-bottom: 1pt solid #999; padding-bottom: 2pt; }
+  .print-page p { font-size: 10.5pt; margin: 0 0 4pt; }
+  .print-table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+  .print-table th, .print-table td { border: .6pt solid #666; padding: 3pt 5pt; text-align: left; }
+  .print-table th { background: #eee !important; }
+  .print-note { margin-top: 10pt; font-size: 8.5pt; color: #555; }
+
+  .print-area--diploma { display: flex !important; justify-content: center; }
+  .diploma {
+    width: 100%;
+    max-width: 275mm;
+    background: #fffdf6 !important;
+    border: 1.5pt solid #c9a13b !important;
+    border-radius: 6mm;
+    box-shadow: none !important;
+    padding: 8mm 12mm !important;
+    break-inside: avoid;
+  }
+  .diploma__border { border: 1.2pt double #c9a13b !important; inset: 3mm; }
+  .diploma__title { font-size: 40pt !important; }
+  .diploma__subtitle { font-size: 18pt !important; }
+  .diploma__name { font-size: 28pt !important; }
+  .diploma__text { font-size: 11pt !important; max-width: 70ch; }
+  .diploma__stats { gap: 4mm; }
+  .diploma__stat { border: .8pt solid #d8c48a !important; }
+  .diploma__stat b { font-size: 16pt !important; }
+  .diploma__skill-grid { grid-template-columns: repeat(4, 1fr) !important; }
+  .diploma-skill { border: .5pt solid #d8c48a !important; }
+  .diploma__seal { width: 24mm; height: 24mm; font-size: 30pt; right: 10mm; top: 8mm; }
+
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
